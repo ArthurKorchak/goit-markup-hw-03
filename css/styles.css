@@ -13,6 +13,9 @@ html {
     --background-color: #FFFFFF;
     --background-2-color: #2F303A;
 }
+.container {
+    display: flex;
+}
 body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
@@ -95,12 +98,25 @@ body ul {
     font-size: 14px;
     line-height: 1.71;
 }
+.block-01 > ul {
+    width: 1170px;
+    justify-content: space-between;
+    margin: 94px auto 94px auto;
+}
+.block-01 li {
+    flex-direction: column;
+    width: 270px;
+}
+.block-01 h3, p {
+    margin: 0;
+}
 .block-01 h3 {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
 }
 .team h3 {
     font-weight: 500;
@@ -204,7 +220,4 @@ body ul {
 }
 .team {
     background-color: #F5F4FA;
-}
-.container {
-    display: flex;
 }
