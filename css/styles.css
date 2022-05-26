@@ -43,6 +43,9 @@ body ul {
     line-height: 1.16;
     letter-spacing: 0.03em;
 }
+.header > .container {
+    margin-right: auto;
+}
 .header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -58,11 +61,7 @@ body ul {
     margin-top: 24px;
     margin-bottom: 24px;
     align-items: center;
-    justify-content: space-between;
     width: 1170px;
-}
-.container-links-h {
-    display: flex;
 }
 .footer {
     background-color: var(--background-2-color);
