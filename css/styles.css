@@ -24,12 +24,17 @@ body {
 }
 body ul {
     list-style-type: none;
+    padding: 0;
 }
 .nav > ul {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    margin: 8px 0px 0px 0px;
+}
+.nav li {
+    margin-right: 50px;
 }
 .h2 {
     text-align: center;
@@ -38,11 +43,26 @@ body ul {
     line-height: 1.16;
     letter-spacing: 0.03em;
 }
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 .header > .contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+.header.container {
+    border: 0;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+}
+.container-links-h {
+    display: flex;
 }
 .footer {
     background-color: var(--background-2-color);
@@ -104,6 +124,8 @@ body ul {
     line-height: 1.19;
     text-decoration: none;
     font-style: normal;
+    margin-right: 93px;
+    padding: 0px;
 }
 .logo-color1 {
     color: var(--accent-color);
@@ -121,6 +143,7 @@ body ul {
 }
 .link.contact {
     color: var(--secondary-text-color);
+    margin-left: 30px;
 }
 .link.contact-f {
     color: #FFFFFF99;
@@ -171,4 +194,7 @@ body ul {
 }
 .team {
     background-color: #F5F4FA;
+}
+.container {
+    display: flex
 }
