@@ -181,7 +181,19 @@ body ul {
     padding-right: 15px;
     margin: 0 auto;
 }
+.portfolio.container {
+    margin: 94px auto 50px auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+}
 .block-02 {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto 94px auto;
+    flex-wrap: wrap;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
@@ -191,6 +203,22 @@ body ul {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin: 20px 0px 4px 24px;
+}
+.block-02 p {
+    margin: 0px 0px 20px 24px;
+}
+.block-02 .container {
+    margin: 0px 30px 30px 0px;
+    width: 370px;
+    border: 1px solid #EEEEEE;
+    flex-direction: column;
+}
+.block-02 .container:nth-child(3n) {
+    margin-right: 0px;
+}
+.block-02 .container:nth-last-child(-n+3) {
+    margin-bottom: 0px;
 }
 .logo {
     color: var(--primary-text-color);
@@ -253,6 +281,38 @@ body ul {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    height: 38px;
+    border: 1px;
+    border-radius: 4px;
+    padding: 6px 22px;
+}
+.button:hover {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    height: 38px;
+    border: 1px;
+    border-radius: 4px;
+    padding: 6px 22px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    height: 38px;
+    border: 1px;
+    border-radius: 4px;
+    padding: 6px 22px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+.btn {
+    margin-right: 8px;
+}
+.btn:last-child {
+    margin-right: 0px;
 }
 .button.hero {
     color: #FFFFFF;
@@ -267,14 +327,6 @@ body ul {
     letter-spacing: 0.06em;
     margin: 0px 0px 200px 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.button:hover {
-    color: #FFFFFF;
-    background-color: var(--accent-color);
-}
-.button:focus {
-    color: #FFFFFF;
-    background-color: var(--accent-color);
 }
 .no-display {
     display: none;
