@@ -45,6 +45,7 @@ body ul {
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin: 0;
 }
 .header > .container {
     margin: 0;
@@ -118,15 +119,52 @@ body ul {
     text-transform: uppercase;
     margin: 0px 0px 10px 0px;
 }
+.container.examples {
+    width: 1170px;
+    justify-content: space-between;
+    margin: 50px auto 94px auto;
+}
+.team {
+    background-color: #F5F4FA;
+}
+.team.container {
+    flex-direction: column;
+    align-items: center;
+}
+.team .h2 {
+    margin: 94px auto 0px auto;
+}
+.team-team {
+    width: 1170px;
+    justify-content: space-between;
+    margin: 50px auto 94px auto;
+}
+.team-team > .container {
+    background-color: var(--background-color);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 .team h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    margin: 30px 0px 0px 0px;
 }
 .team p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
+    margin: 10px 0px 30px 0px;
+}
+.footer.container {
+    flex-direction: column;
+    align-items: left;
+    width: 1170px;
+    margin: 0 auto;
 }
 .block-02 {
     font-weight: 400;
@@ -155,6 +193,16 @@ body ul {
 }
 .logo-f {
     color: #FFFFFF;
+    margin: 60px 0px 20px 0px;
+}
+.logo-f-container {
+    margin: 0px 0px 60px 0px;
+}
+.logo-f-container .link:first-child {
+    margin: 0;
+}
+.logo-f-container .link{
+    margin: 9px 0 0 0;
 }
 .link {
     color: var(--primary-text-color);
@@ -203,6 +251,7 @@ body ul {
     border-radius: 4px;
     letter-spacing: 0.06em;
     margin: 0px 0px 200px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button:hover {
     color: #FFFFFF;
@@ -217,7 +266,4 @@ body ul {
 }
 .sec-text {
     color: var(--secondary-text-color);
-}
-.team {
-    background-color: #F5F4FA;
 }
