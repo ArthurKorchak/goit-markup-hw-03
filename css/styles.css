@@ -16,6 +16,9 @@ html {
 .container {
     display: flex;
 }
+.section {
+    padding: 94px 0px;
+}
 body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
@@ -105,13 +108,14 @@ body ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    padding-bottom: 94px;
 }
 .block-01 > ul {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     justify-content: space-between;
-    margin: 94px auto 94px auto;
+    margin: 0px auto ;
 }
 .block-01 li {
     flex-direction: column;
@@ -133,7 +137,7 @@ body ul {
     padding-left: 15px;
     padding-right: 15px;
     justify-content: space-between;
-    margin: 50px auto 94px auto;
+    margin: 50px auto 0px auto;
 }
 .team {
     background-color: #F5F4FA;
@@ -143,14 +147,14 @@ body ul {
     align-items: center;
 }
 .team .h2 {
-    margin: 94px auto 0px auto;
+    margin: 0px auto;
 }
 .team-team {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     justify-content: space-between;
-    margin: 50px auto 94px auto;
+    margin: 50px auto 0px auto;
 }
 .team-team > .container {
     background-color: var(--background-color);
@@ -182,7 +186,7 @@ body ul {
     margin: 0 auto;
 }
 .portfolio.container {
-    margin: 94px auto 50px auto;
+    margin: 0px auto 50px auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -192,7 +196,7 @@ body ul {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0px auto 94px auto;
+    margin: 0px auto 0px auto;
     flex-wrap: wrap;
     font-weight: 400;
     font-size: 16px;
@@ -210,8 +214,6 @@ body ul {
 }
 .block-02 .container {
     margin: 0px 30px 30px 0px;
-    width: 370px;
-    border: 1px solid #EEEEEE;
     flex-direction: column;
 }
 .block-02 .container:nth-child(3n) {
@@ -219,6 +221,11 @@ body ul {
 }
 .block-02 .container:nth-last-child(-n+3) {
     margin-bottom: 0px;
+}
+.card-footer {
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 .logo {
     color: var(--primary-text-color);
