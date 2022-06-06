@@ -15,6 +15,9 @@ html {
 }
 .container {
     display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px 15px;
 }
 .section {
     padding: 94px 0px;
@@ -32,14 +35,19 @@ body ul {
     list-style-type: none;
     padding: 0;
 }
+.nav {
+    display: flex;
+}
 .nav > ul {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    margin: 8px 0px 0px 0px;
+    align-items: center;
+    margin: 0;
 }
-.nav li {
+.nav li:not(:last-child) {
     margin-right: 50px;
 }
 .h2 {
@@ -50,28 +58,18 @@ body ul {
     letter-spacing: 0.03em;
     margin: 0;
 }
-.header > .container {
-    margin: 0;
-    margin-right: auto;
-}
 .header {
+    padding: 24px 0px 25px 0px;
     border-bottom: 1px solid #ECECEC;
 }
-.header > .contact {
+.head.container {
+    align-items: center;
+    padding: 0px 15px 0px 15px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-.header.container {
-    border: 0;
-    margin: auto;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    align-items: center;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    justify-content: space-between;
 }
 .footer {
     background-color: var(--background-2-color);
@@ -87,14 +85,15 @@ body ul {
     margin: 0;
     padding: 0;
 }
+.section.hero {
+    padding: 200px 0px;
+}
 .hero .container {
     flex-direction: column;
     align-items: center;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    grid-gap: 30px;
 }
 .main-text {
     color: #FFFFFF;
@@ -102,29 +101,26 @@ body ul {
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
-    margin: 200px 0px 30px 0px;
+    margin: 0;
 }
-.block-01 {
+.benefits {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    padding-bottom: 94px;
 }
-.block-01 > ul {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+.benefits {
+    display: flex;
     justify-content: space-between;
-    margin: 0px auto ;
 }
-.block-01 li {
+.benefits li {
+    display: flex;
     flex-direction: column;
     width: 270px;
 }
-.block-01 h3, p {
+.benefits p {
     margin: 0;
 }
-.block-01 h3 {
+.benefits h3 {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
@@ -133,13 +129,20 @@ body ul {
     margin: 0px 0px 10px 0px;
 }
 .container.examples {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    grid-gap: 50px;
+}
+.section.example {
+    padding-top: 0;
+}
+.examples {
+    display: flex;
     justify-content: space-between;
-    margin: 50px auto 0px auto;
 }
 .team {
+    display: flex;
     background-color: #F5F4FA;
 }
 .team.container {
@@ -150,13 +153,14 @@ body ul {
     margin: 0px auto;
 }
 .team-team {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    display: flex;
     justify-content: space-between;
-    margin: 50px auto 0px auto;
+    margin: 0;
+    width: 1170px;
+    padding-top: 50px;
 }
-.team-team > .container {
+.team-team li {
+    display: flex;
     background-color: var(--background-color);
     flex-direction: column;
     align-items: center;
@@ -165,25 +169,30 @@ body ul {
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team h3 {
+.teammate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    grid-gap: 10px;
+}
+.teammate h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    margin: 30px 0px 0px 0px;
-}
-.team p {
+    margin: 0;
+}            
+.teammate p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    margin: 10px 0px 30px 0px;
+    margin: 0;
 }
-.footer.container {
+.footer {
+    padding: 60px 0px;
+}
+.footer > div {
     flex-direction: column;
-    align-items: left;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
 }
 .portfolio.container {
     margin: 0px auto 50px auto;
@@ -243,10 +252,10 @@ body ul {
 }
 .logo-f {
     color: #FFFFFF;
-    margin: 60px 0px 20px 0px;
+    margin-bottom: 20px;
 }
 .logo-f-container {
-    margin: 0px 0px 60px 0px;
+    margin: 0;
 }
 .logo-f-container .link:first-child {
     margin: 0;
@@ -332,7 +341,7 @@ body ul {
     border: 1px;
     border-radius: 4px;
     letter-spacing: 0.06em;
-    margin: 0px 0px 200px 0px;
+    margin: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .no-display {

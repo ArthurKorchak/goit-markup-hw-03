@@ -11,17 +11,19 @@
 </head>
 <body>
     <header class="header">
-        <div class="header container">
-            <nav class="nav container">
+        <div class="head container">
+            <nav class="nav">
                 <a class="logo" href="./index.html"><span class="logo-color1">Web</span>Studio </a>
-                <ul class="container">
+                <ul>
                     <li><a href="./index.html" class="link current">Студия</a></li>
                     <li><a href="./portfolio.html" class="link">Портфолио</a></li>
                     <li><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
-            <a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a>
-            <a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a>
+            <div class="nav">
+                <a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a>
+                <a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a>
+            </div>
         </div>
     </header>
     <main>
@@ -33,69 +35,79 @@
         </section>
         <section class="section">
             <h2 class="no-display">Преимущества</h2>
-                <div class="block-01">
-                    <ul class="container">
-                        <li class="container">
-                            <h3>Внимание к деталям</h3>
-                            <p class="sec-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                        </li>
-                        <li class="container">
-                            <h3>Пунктуальность</h3>
-                            <p class="sec-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                        </li>
-                        <li class="container">
-                            <h3>Планирование</h3>
-                            <p class="sec-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                        </li>
-                        <li class="container">
-                            <h3>Современные технологии</h3>
-                            <p class="sec-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                        </li>
-                    </ul>
-                </div>            
-            <h2 class="h2">Чем мы занимаемся</h2>
-            <ul class="container examples">
-                <li>
-                    <img src="./images/example-01.jpg" width="370" alt="Изображение работы №1">
-                </li>
-                <li>
-                    <img src="./images/example-02.jpg" width="370" alt="Изображение работы №2">
-                </li>
-                <li>
-                    <img src="./images/example-03.jpg" width="370" alt="Изображение работы №3">
-                </li>
-            </ul>
+                <ul class="benefits container">
+                    <li>
+                        <h3>Внимание к деталям</h3>
+                        <p class="sec-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li>
+                        <h3>Пунктуальность</h3>
+                        <p class="sec-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li>
+                        <h3>Планирование</h3>
+                        <p class="sec-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li>
+                        <h3>Современные технологии</h3>
+                        <p class="sec-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+        </section>
+        <section class="section example">
+            <div class="container examples">
+                <h2 class="h2">Чем мы занимаемся</h2>
+                <ul class="examples">
+                    <li>
+                        <img src="./images/example-01.jpg" width="370" alt="Изображение работы №1">
+                    </li>
+                    <li>
+                        <img src="./images/example-02.jpg" width="370" alt="Изображение работы №2">
+                    </li>
+                    <li>
+                        <img src="./images/example-03.jpg" width="370" alt="Изображение работы №3">
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="section team">
             <div class="team container">
                 <h2 class="h2">Наша команда</h2>
-                <ul class="team-team container">
-                    <li class="container">
+                <ul class="team-team">
+                    <li>
                         <img src="./images/team-01.jpg" width="270" alt="Участник команды №1">
-                        <h3>Игорь Демьяненко</h3>
-                        <p class="sec-text">Product Designer</p>
+                        <div class="teammate">
+                            <h3>Игорь Демьяненко</h3>
+                            <p class="sec-text">Product Designer</p>
+                        </div>
                     </li>
-                    <li class="container">
+                    <li>
                         <img src="./images/team-02.jpg" width="270" alt="Участник команды №2">
-                        <h3>Ольга Репина</h3>
-                        <p class="sec-text">Frontend Developer</p>
+                        <div class="teammate">
+                            <h3>Ольга Репина</h3>
+                            <p class="sec-text">Frontend Developer</p>
+                        </div>
                     </li>
-                    <li class="container">
+                    <li>
                         <img src="./images/team-03.jpg" width="270" alt="Участник команды №3">
-                        <h3>Николай Тарасов</h3>
-                        <p class="sec-text">Marketing</p>
+                        <div class="teammate">
+                            <h3>Николай Тарасов</h3>
+                            <p class="sec-text">Marketing</p>
+                        </div>
                     </li>
-                    <li class="container">
+                    <li>
                         <img src="./images/team-04.jpg" width="270" alt="Участник команды №4">
-                        <h3>Михаил Ермаков</h3>
-                        <p class="sec-text">UI Designer</p>
+                        <div class="teammate">
+                            <h3>Михаил Ермаков</h3>
+                            <p class="sec-text">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer container">
+        <div class="container">
             <a class="logo logo-f" href="./index.html"><span class="logo-color1">Web</span>Studio </a>
             <address>
                 <ul class="logo-f-container">
