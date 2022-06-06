@@ -38,11 +38,7 @@ body ul {
     list-style-type: none;
     padding: 0;
 }
-.nav {
-    display: flex;
-}
 .nav > ul {
-    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -110,13 +106,9 @@ body ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-}
-.benefits {
-    display: flex;
     justify-content: space-between;
 }
 .benefits li {
-    display: flex;
     flex-direction: column;
     width: 270px;
 }
@@ -132,7 +124,6 @@ body ul {
     margin: 0px 0px 10px 0px;
 }
 .container.examples {
-    display: flex;
     flex-direction: column;
     padding: 0px 15px;
     grid-gap: 50px;
@@ -141,11 +132,9 @@ body ul {
     padding-top: 0;
 }
 .examples {
-    display: flex;
     justify-content: space-between;
 }
 .team {
-    display: flex;
     background-color: #F5F4FA;
 }
 .team.container {
@@ -156,7 +145,6 @@ body ul {
     margin: 0px auto;
 }
 .team-team {
-    display: flex;
     justify-content: space-between;
     margin: 0;
     width: 1170px;
@@ -173,7 +161,6 @@ body ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .teammate {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 0px;
