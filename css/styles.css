@@ -22,6 +22,9 @@ html {
 .section {
     padding: 94px 0px;
 }
+.flex {
+    display: flex;
+}
 body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
@@ -194,14 +197,16 @@ body ul {
 .footer > div {
     flex-direction: column;
 }
-.portfolio.container {
-    margin: 0px auto 50px auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+.container.pf {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.pf-buttons {
+    margin: 0;
     justify-content: center;
 }
-.block-02 {
+.portfolio {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -211,27 +216,29 @@ body ul {
     font-size: 16px;
     line-height: 1.87;
 }
-.block-02 h2 {
+.portfolio h2 {
     text-align: left;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin: 20px 0px 4px 24px;
 }
-.block-02 p {
-    margin: 0px 0px 20px 24px;
+.portfolio p {
+    margin: 0;
 }
-.block-02 .container {
+.portfolio .pf-item {
     margin: 0px 30px 30px 0px;
     flex-direction: column;
 }
-.block-02 .container:nth-child(3n) {
+.portfolio .flex:nth-child(3n) {
     margin-right: 0px;
 }
-.block-02 .container:nth-last-child(-n+3) {
+.portfolio .flex:nth-last-child(-n+3) {
     margin-bottom: 0px;
 }
 .card-footer {
+    flex-direction: column;
+    padding: 20px 24px;
+    gap: 4px;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
